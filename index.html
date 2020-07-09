@@ -5,6 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- meta additional -->
+    <meta name="title" content="Hirohisa Belanja Makanan, Alat Kecantikan, dan Sayuran secara Online">
+    <meta name="description" content="Belanja Makanan, Skincare, Sayuran secara Online dan free ongkir. Belanja  makanan, alat kecantikan dan sayuran lebih mudah tinggal klik dan dikirim">
+    <meta name="keywords" content="hirohisa, masker murah, skincare murah, skincare murah bekasi, belanja sayuran online, dapur bekasi, makanan enak dibekasi, belanja free ongkir, makanan enak di tambun, tambun, hirohisa tambun">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <!-- meta additional -->
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
@@ -59,31 +68,42 @@
       </div>
     </nav>
 
-    <section class="regular slider">
-    <div>
-      <img width="100%" class="px-3 img-fluid" src="./img/masker-kopi.jpg">
-    </div>
-    <div>
-      <img width="100%" class="px-3 img-fluid" src="./img/masker-kopi.jpg">
-    </div>
-    <div>
-      <img width="100%" class="px-3 img-fluid" src="./img/masker-kopi.jpg">
-    </div>
-    <div>
-      <img width="100%" class="px-3 img-fluid" src="./img/masker-kopi.jpg">
-    </div>
-    <div>
-      <img width="100%" class="px-3 img-fluid" src="./img/masker-kopi.jpg">
-    </div>
-    <div>
-      <img width="100%" class="px-3 img-fluid" src="./img/masker-kopi.jpg">
-    </div>
-  </section>
+    <section class="belanja-apa-hari-ini">
+      <div class="container-fluid">
+        <div class="row justify-content-between">
+          <h3>Mau Belanja Apa Hari ini?</h3>
+          <div class="col-4 col-lg-4 col-md-6">
+            <div class="img-holder">
+              <a href="#">
+              <img src="./img/kecantikan-min.jpg" alt="hirohisa" class="img-fluid">
+              </a>
+            </div>
+            <p class="title-belanja">Kecantikan</p>
+          </div>
+          <div class="col-4 col-lg-4 col-md-6">
+            <div class="img-holder">
+              <a href="#">
+              <img src="./img/food-min.jpg" alt="hirohisa" class="img-fluid">
+              </a>
+            </div>
+            <p class="title-belanja">Makanan</p>
+          </div>
+          <div class="col-4 col-lg-4 col-md-6">
+            <div class="img-holder">
+              <a href="#">
+              <img src="./img/sayuran-min.jpg" alt="hirohisa" class="img-fluid">
+              </a>
+            </div>
+            <p class="title-belanja">Sayuran</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="section-product">
       <div class="container-fluid">
         <div class="row gy-4">
-          <h3>Product <img src="" alt=""></h3>
+          <h3>Product <img src="./img/icons/new.svg" width="30" alt="hirohisa"></h3>
           <div class="col-lg-3 col-md-6">
             <div class="product shadow card-body">
               <div class="img-thumb">
@@ -148,13 +168,27 @@
       <div class="container-fluid">
         <div class="row">
           <h3>Best Seller</h3>
-          <div class="col-lg-8">
-            <div class="img-big">
-              <img src="https://placeimg.com/640/480/people" alt="">
-            </div>
-            <div class="img-big float-right">
-              <img src="https://placeimg.com/400/340/people" alt="">
-            </div>
+          <div class="col-lg-12">
+            <section class="regular slider">
+              <div>
+                <img width="100%" class="px-3 img-fluid" src="./img/masker-kopi.jpg">
+              </div>
+              <div>
+                <img width="100%" class="px-3 img-fluid" src="./img/masker-kopi.jpg">
+              </div>
+              <div>
+                <img width="100%" class="px-3 img-fluid" src="./img/masker-kopi.jpg">
+              </div>
+              <div>
+                <img width="100%" class="px-3 img-fluid" src="./img/masker-kopi.jpg">
+              </div>
+              <div>
+                <img width="100%" class="px-3 img-fluid" src="./img/masker-kopi.jpg">
+              </div>
+              <div>
+                <img width="100%" class="px-3 img-fluid" src="./img/masker-kopi.jpg">
+              </div>
+            </section>
           </div>
         </div>
       </div>
@@ -300,10 +334,12 @@
     <script>
      $('.slider').slick({
       dots: true,
-      infinite: false,
+      infinite: true,
       speed: 300,
       slidesToShow: 4,
       slidesToScroll: 4,
+      autoplay: true,
+      autoplaySpeed: 2000,
       responsive: [
         {
           breakpoint: 1024,
