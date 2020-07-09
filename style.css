@@ -19,6 +19,8 @@ body {
 	color: white;
 	border: 1px solid #658fb9;
 	transition: all .5s ease;
+	width: 100%;
+	margin: 5px 0;
 }
 
 .btn-cta:hover {
@@ -28,9 +30,17 @@ body {
 }
 
 .btn-second {
+	width: 100%;
+	margin: 5px 0;
 	background-color: #f8f9fa;
 	color: #658fb9;
 	border: 1px solid #658fb9;
+}
+
+.title-section {
+	font-weight: bold;
+	color: #658fb9;
+	font-size: 22px;
 }
 
 /* END GLOBALS*/
@@ -58,10 +68,28 @@ body {
 
 /* END NAVBAR*/
 
+/* FEATURED*/
+.featured {
+	margin: 10px 0;
+}
+.item-featured {
+	color: #658fb9;
+	font-weight: 666;
+	text-align: center;
+}
+
+.cart-counter {
+	background: #658fb9;
+	padding: 5px;
+	border-radius: 50%;
+	color: white;
+}
+
+
+/* FEATURED*/
 
 /* BELANJA APA HARI INI*/
 .belanja-apa-hari-ini {
-	margin-top: 2rem;
 	padding: 1rem 0;
 	background: white;
 }
@@ -140,6 +168,7 @@ section.section-product {
 }
 
 .title-product {
+	margin-top: 10px;
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -150,10 +179,7 @@ section.section-product {
 	color: #658fb9;
 }
 
-.button-group {
-	display: flex;
-	justify-content: space-between;
-}
+
 
 /* SECTION PRODUCT */
 
@@ -171,3 +197,100 @@ section.section-product {
 	font-size: 30px;
 }
 /*END SECTION BEST SELLER*/
+
+footer {
+	color: white;
+}
+
+footer .title-footer{
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+footer ul li{
+	list-style: none;
+	margin-left: -30px;
+}
+
+footer ul li a{
+	color: white;
+	text-decoration: none;
+	text-decoration-style: none;
+}
+
+
+@media screen and (max-width: 768px) {
+	
+	/* BELANJA APA HARI INI*/
+
+	.belanja-apa-hari-ini h3 {
+		color: #658fb9;
+		font-weight: bold;
+		font-size: 18px;
+	}
+
+
+	.img-holder img{
+		width: 100px;
+		height: 100px;
+		object-fit: cover;
+		border-radius: 50%;
+		transition: all .1s ease;
+	}
+
+	.img-holder:hover img{
+		width: 100px;
+		height: 100px;
+		object-fit: cover;
+		border-radius: 50%;
+		transform: scale(1.1);
+	}
+
+	.title-belanja {
+		margin-top: 1rem;
+		font-size: 14px;
+		text-align: center;
+		font-weight: bold;
+		letter-spacing: 1px;
+
+	}
+
+
+	/* SECTION PRODUCT */
+
+	.section-product h3 {
+		font-weight: bold;
+		color: #658fb9;
+		font-size: 18px;
+	}
+
+	.img-thumb {
+		height: 200px;
+		width: 100%;
+	}
+
+	.img-thumb img {
+		height: 200px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.title-product {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.price-product {
+		font-size: 16px;
+		font-weight: 555;
+		color: #658fb9;
+	}
+
+	.button-group {
+		display: block;
+		justify-content: space-between;
+	}
+
+	/* SECTION PRODUCT */
+
+}
