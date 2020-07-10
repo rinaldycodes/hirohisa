@@ -68,124 +68,127 @@
       </div>
     </nav>
 
-    <header class="featured">
-      <div class="row container-fluid justify-content-center align-items-center">
+    <header class="pt-4 pb-0">
+      <div class="row container-fluid justify-content-center ">
         <div class="col-lg-11 col-9">
-            <div class="autoplay">
-              <div><p class="item-featured">Hirohisa</p></div>
-              <div><p class="item-featured">Dapur Pasundan</p></div>
-              <div><p class="item-featured">Sayur Mang Agus</p></div>
-              <div><p class="item-featured">TyagaDEV</p></div>
-              <div><p class="item-featured">LOCALPRIDE</p></div>
-              <div><p class="item-featured">Tambun Food Court</p></div>
-            </div>
+            <nav aria-label="breadcrumb" >
+              <ol class="breadcrumb bg-light">
+                <li class="breadcrumb-item"><a href="./index.html">Cart</a></li>
+                <li class="breadcrumb-item" aria-current="page">Checkout</li>
+              </ol>
+            </nav>
         </div>
         <div class="col text-right">
           <div class="icon-cart">
-            <span class="cart-counter" id="cart-counter">1</span> <img src="./img/icons/cart.svg" width="30px" alt="keranjang belanja">
+            <span class="badge primary-color" id="cart-counter">1</span><img src="./img/icons/cart.svg" width="20px" alt="keranjang belanja">
           </div>
         </div>
       </div>
     </header>
 
     <main>
-      
-        <div class="container-fluid">
-          <nav aria-label="breadcrumb" >
-            <ol class="breadcrumb bg-light">
-              <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-              <li class="breadcrumb-item" aria-current="page"><a href="./category.html">Kecantikan</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Product Name</li>
-            </ol>
-          </nav>
-
-          <section class="profil-toko">
-            <div class="row gy-3 justify-content-center align-items-center">
-              <div class="col-lg-1 col-md-2 mr-lg-4 mr-0">
-                <div class="img-toko mx-auto">
-                  <img src="https://placeimg.com/200/200/people" alt="" class="img-fluid">
-                </div>
-              </div>
-              <div class="col-lg-8 col-md-7 text-lg-left text-center">
-                <div class="content-area">
-                  <h2>Hirohisa</h2>
-                  <p>Tambun, Bekasi</p>
-                </div>
-              </div>
-              <div class="col text-lg-right text-center">
-                <a href="#"><img src="./img/icons/whatsapp.svg" alt="whatsapp hirohisa" class="img-fluid icon"></a>
-                Hubungi Toko
+      <section class="cart">
+        <div class="container-sm">
+          <h2 class="hero-title text-center">Shopping Cart</h2>
+          <div class="row gy-5">
+            <div class="col-lg-8">
+              <table class="table" width="100%">
+                <tr>
+                  <th >Produk</th>
+                  <th class="text-right">Jumlah</th>
+                  <th class="text-right" id="total">Total</th>
+                </tr>
+                <tr>
+                  <td class="item-cart">
+                    <a href="#" class="nav-link text-danger mb-0 pl-0">X</a>
+                    <div class="img-cart">
+                      <img src="https://placeimg.com/200/200/arch" alt="foto produk">
+                    </div>
+                    <div class="content-cart">
+                      <p class="product">Masker Kopi 50gr</p>
+                      <p class="price">1 x Rp.25.000</p>
+                    </div>
+                  </td>
+                  <td class="text-right total align-middle">
+                      <button id="min">-</button>
+                      <input type="number" disabled="">
+                      <button id="plus">+</button>
+                  </td>
+                  <td class="align-middle text-right" id="total">Rp.25.000</td>
+                </tr>
+                <tr>
+                  <td class="item-cart align-middle">
+                    <a href="#" class="nav-link text-danger mb-0 pl-0">X</a>
+                    <div class="img-cart">
+                      <img src="https://placeimg.com/200/200/arch" alt="foto produk">
+                    </div>
+                    <div class="content-cart">
+                      <p class="product">Lorem ipsum dolor sit amet.</p>
+                      <p class="price">1 x Rp.25.000</p>
+                    </div>
+                  </td>
+                  <td class="text-right total align-middle">
+                      <button id="min">-</button>
+                      <input type="number" disabled="">
+                      <button id="plus">+</button>
+                  </td>
+                  <td class="align-middle text-right" id="total">Rp.25.000</td>
+                </tr>
+              </table>
+              <div class="button-group">
+                <a href="#" class="btn btn-second">Home</a>
+                <button type="button" class="btn btn-cta" id="update">Update</button>
               </div>
             </div>
-          </section>
 
-          <section class="detail-product mb-4">  
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="slider slider-for">
-                  <div class="holder-img-detail-product"><img src="./img/kecantikan-min.jpg" alt="img product hirohisa" class="img-fluid"></div>
-                  <div class="holder-img-detail-product"><img src="./img/masker-kopi.jpg" alt="img product hirohisa" class="img-fluid"></div>
-                  <div class="holder-img-detail-product"><img src="./img/kecantikan-min.jpg" alt="img product hirohisa" class="img-fluid"></div>
-                  <div class="holder-img-detail-product"><img src="./img/masker-kopi.jpg" alt="img product hirohisa" class="img-fluid"></div>
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-header primary-color text-white">
+                  DETAILS
                 </div>
-                <div class="slider slider-nav">
-                  <div><img src="./img/kecantikan-min.jpg" alt="img product hirohisa" class="img-fluid"></div>
-                  <div><img src="./img/masker-kopi.jpg" alt="img product hirohisa" class="img-fluid"></div>
-                  <div><img src="./img/kecantikan-min.jpg" alt="img product hirohisa" class="img-fluid"></div>
-                  <div><img src="./img/masker-kopi.jpg" alt="img product hirohisa" class="img-fluid"></div>
-                </div>
-              </div>
-              <div class="col-lg-6"> 
-                <p class="title-product">Masker Kopi 25gram. Pencerah Kulit Wajah</p>
-                <div class="form-group py-3">
-                  <i class="fa fa-eyes"></i><span class="views">1000x Dilihat</span>
-                  <span class="sold">2,5RB Terjual</span>
-                </div>
-                <div class="price-holder py-3">
-                  <span class="price-product">Rp. 25.000</span>
-                </div>
-                <div class="promo-holder row py-5">
-                  <div class="col-lg-2">
-                    <p>Promo</p>
+                <div class="card-body">
+                  <table width="100%" class="table table-lg">
+                    <tr>
+                      <td>Pengiriman Ke</td>
+                      <th class="text-right">
+                        <select name="kota" id="" class="form-control">
+                          <option value="Tambun Pasar">Tambun Pasar</option>
+                          <option value="Graha Prima">Graha Prima</option>
+                          <option value="Alamanda">Alamanda</option>
+                          <option value="Wisma Asri">Wisma Asri</option>
+                          <option value="Alamanda">Alamanda</option>
+                        </select>
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>Subtotal</td>
+                      <th class="text-right">Rp.50.000</th>
+                    </tr>
+                    <tr>
+                      <td>Ongkir</td>
+                      <th class="text-right">Rp.5.000</th>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <th class="text-right">Rp.55.000</th>
+                    </tr>
+                  </table>
+                  <div class="pb-3">
+                    <span>Punya Voucher?</span>
+                    <input type="text" placeholder="Masukan Voucher" class="form-control">
                   </div>
-                  <div class="col-lg-10">
-                    <div class="autoplay">
-                      <div><p class="item-featured">Free Ongkir Tambun</p></div>
-                      <div><p class="item-featured">Beli 2 Gratis 1</p></div>
-                      <div><p class="item-featured">Beli 5 Diskon 5%</p></div>
-                      <div><p class="item-featured">TyagaDEV</p></div>
-                    </div>
-                  </div>
+                  <a type="button" href="./shipping.html" class="btn btn-cta form-control">SHIPPING</a>
+                <a href="#" class="btn btn-second form-control">RESET ORDER</a>
                 </div>
-
-                <div class="quantity-holder row align-items-center justify-content-center">
-                  <div class="col-lg-2">
-                    <span>Jumlah</span>
-                  </div>
-                  <div class="col-lg-10">
-                    <div class="button-group">
-                      <button id="min" onclick="btnMin()">-</button>
-                      <input type="number" id="qty" class="quantity" value="1" disabled="">
-                      <button class="plus" id="plus" onclick="btnPlus()">+</button>
-                      <span>Stok <mark id="textStock">10</mark> item</span>
-                      <input type="number" hidden="" value="10" id="stock">
-                    </div>
-                  </div>
-                </div>
-
-                <script>
-                  
-                </script>
-
-                <a href="./cart.html" class="btn btn-second py-3">Masukan Keranjang</a>
-                <button type="submit" class="btn btn-cta py-3">Beli Sekarang</button>
               </div>
             </div>
-          </section>
+          </div>
+          
         </div>
-
-
+      </section>
     </main>
+
+
 
 
     <footer class="footer-home bg-dark py-5">
@@ -210,7 +213,6 @@
           </div>
         </div>
       </div>
-
     </footer>
 
 

@@ -14,12 +14,31 @@ body {
 	padding: 0;
 }
 
-.btn-cta {
+.hero-title {
+	font-weight: bold;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #658fb9;
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+}
+
+.content-area h2 {
+	font-weight: bold;
+}
+
+.btn.btn-cta {
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 	background-color: #658fb9;
 	color: white;
+	padding: 10px 20px;
 	border: 1px solid #658fb9;
 	transition: all .5s ease;
-	width: 100%;
 	margin: 5px 0;
 }
 
@@ -29,12 +48,21 @@ body {
 	border: 1px solid #658fb9;
 }
 
-.btn-second {
-	width: 100%;
+.btn.btn-second {
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 10px 20px;
 	margin: 5px 0;
 	background-color: #f8f9fa;
 	color: #658fb9;
 	border: 1px solid #658fb9;
+}
+
+.btn.btn-second:hover {
+		color: black;
+		background: whitesmoke;
+		border-color: black;
 }
 
 .title-section {
@@ -201,6 +229,25 @@ section.section-product {
 }
 /*END SECTION BEST SELLER*/
 
+
+/* SECTION PROFILE PENJUAL ON DETAIL PRODUCT*/
+.profil-toko {
+	background: #fff;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+
+.profil-toko .img-toko {
+	width: 100px;
+	height: 100px;
+	margin-right: 20px;
+}
+
+.img-toko img {
+	border-radius: 50%;
+}
+/* END SECTION PROFILE PENJUAL ON DETAIL PRODUCT*/
 /* SECTION DETAIL PRODUCT*/
 .holder-img-detail-product {
 	height: 480px;
@@ -281,6 +328,53 @@ section.section-product {
 }
 /* END SECTION DETAIL PRODUCT*/
 
+/*  SECTION CART*/
+.cart {
+	padding: 20px 0;
+	background: #fff;	
+	margin: 20px 0 30px 0;
+}
+
+
+.cart td.item-cart {
+	display: inline-flex;
+	align-items: center;
+}
+
+td.item-cart {
+	padding: 10px 0;
+}
+
+.item-cart p.product, p.price{
+	font-size: 15px;
+	font-weight: bold;
+
+}
+
+.cart .item-cart .img-cart, .img-cart img {
+	width: 100px;
+	height: 100px;
+	margin-right: 10px;
+	border-radius: 5%;
+}
+
+.cart td.total, td input{
+	width: 30%;
+	align-items: center;
+}
+
+.cart button{
+	padding: 2px 8px;
+	border: none;
+	margin: 0;
+	background: #658fb9;
+}
+
+/* END SECTION CART*/
+
+
+
+
 footer {
 	color: white;
 }
@@ -303,8 +397,21 @@ footer ul li a{
 
 
 @media screen and (max-width: 768px) {
+
+
+	.btn.btn-cta {
+		width: 100%;
+	}
+
+	
+
+	.btn.btn-second {
+		width: 100%;
+	}
 	
 	/* BELANJA APA HARI INI*/
+
+
 
 	.belanja-apa-hari-ini h3 {
 		color: #658fb9;
@@ -380,4 +487,48 @@ footer ul li a{
 
 	/* SECTION PRODUCT */
 
+	/*  SECTION CART*/
+	.cart {
+		padding: 20px 0;
+		background: #fff;	
+		margin: 20px 0 30px 0;
+	}
+	
+	.cart #total {
+		display: none;
+	}
+
+	.cart td.item-cart {
+		display: flex;
+		align-items: center;
+	}
+
+	.item-cart p.product, p.price{
+		font-size: 14px;
+		font-weight: bold;
+
+	}
+
+	.cart .item-cart .img-cart, .img-cart img {
+		width: 100px;
+		height: 100px;
+		margin-right: 10px;
+		border-radius: 5%;
+	}
+
+	.cart td.total, td input{
+		align-items: center;
+	}
+
+	.cart button{
+		padding: 2px 8px;
+		border: none;
+		margin: 0;
+		background: #658fb9;
+	}
+
+	/* END SECTION CART*/
+
 }
+
+/*END MOBILE*/
