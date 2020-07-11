@@ -173,7 +173,7 @@ body {
 
 /* SECTION PRODUCT */
 section.section-product {
-	margin: 2.5rem;
+	margin: 2.5rem 0;
 }
 
 .section-product h3 {
@@ -373,6 +373,31 @@ td.item-cart {
 /* END SECTION CART*/
 
 
+.complete {
+	height: 100vh;
+	text-align: center;
+	color: #658fb9;
+	padding-top: 150px;
+}
+
+.complete .img-complete {
+	width: 150px;
+	height: 150px;
+}
+
+
+.complete img {
+	width: 150px;
+	height: 150px;
+}
+
+.complete h1{
+	font-weight: bold;
+	color: #658fb9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 
 footer {
